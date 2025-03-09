@@ -2,3 +2,4 @@
 /dist/
 /venv/
 pdf2image.py
+extractword.py
