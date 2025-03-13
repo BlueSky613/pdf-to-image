@@ -85,7 +85,7 @@ for page_num in range(len(doc)):
                 for span in line["spans"]:
 
                     # If the word color matches our target color
-                    if span['text'] == 'STRING 2':
+                    if span['bbox'][1] >= 1220:
                         include_sentence = True
                                 
                         print(f"Page {page_num + 1}: {span}")
