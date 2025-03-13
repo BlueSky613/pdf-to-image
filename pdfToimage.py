@@ -63,7 +63,7 @@
 import fitz  # PyMuPDF
 
 # Open the PDF file
-pdf_path = "test_redline4.pdf"
+pdf_path = "test_redline_10.pdf"
 doc = fitz.open(pdf_path)
 
 # Define the RGB color for red
@@ -85,7 +85,7 @@ for page_num in range(len(doc)):
                 for span in line["spans"]:
 
                     # If the word color matches our target color
-                    if span['text'] == '415V MCC709':
+                    if span['text'] == 'STRING 2':
                         include_sentence = True
                                 
                         print(f"Page {page_num + 1}: {span}")
